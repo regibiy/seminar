@@ -1,0 +1,21 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+RewriteRule ^beranda$ media.php?page=index [L]
+RewriteRule ^tentang-kami\.html$ media.php?page=about [L]
+RewriteRule ^kontak\.html$ media.php?page=contact [L]
+RewriteRule ^cara-pendaftaran\.html$ media.php?page=caradaftar [L]
+RewriteRule ^registrasi\.html$ media.php?page=reg [L]
+RewriteRule ^aksi-reg\.html$ aksi_registrasi.php?page=aksi-reg [L]
+RewriteRule ^sign-in\.html$ sign_in.php?page=sign-in [L]
+RewriteRule ^sign-out\.html$ sign_out.php?page=sign-out [L]
+RewriteRule ^verifikasi\.html$ verifikasi.php?page=verifikasi [L]
+RewriteRule ^view-reg\.html$ media.php?page=tampil-reg [L]
+RewriteRule ^confirm-payment\.html$ media.php?page=konfirmasi-byr [L]
+RewriteRule ^act-confirm-payment\.html$ aksi_konfirmasi.php?page=aksi-konfirmasi [L]
+RewriteRule ^cetak-bukti-registrasi\.html$ pdf_cetakbukti.php?page=cetakbukti [L]
+RewriteRule ^detail-(.*)\.html$ media.php?page=detailsmnr&tid=$1 [L]
+
+Options All -Indexes
+</IfModule>
+
